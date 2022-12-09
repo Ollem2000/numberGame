@@ -1,0 +1,120 @@
+*
+{
+	font-family: calibri; color: white;
+	margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body
+{
+	background: radial-gradient(hsl(0, 0%, 4%) 1px, hsl(0, 0%, 0%) 1px); background-size: 4px 4px;
+	display: flex; align-items: center; justify-content: center;
+}
+
+section
+{
+	padding: 32px;
+	display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px;
+}
+
+#bttStart
+{
+	font-size: 32px;
+	background: none; border: 1px solid lightgray;
+	padding: 16px;
+	position: relative;
+	display:block;
+	overflow: hidden;
+}
+	#bttStart:hover, #bttRestart:hover
+	{
+		color: #333;
+	}
+	#bttStart:before, #bttRestart:before
+	{
+		content: "";
+		position: absolute;
+		background: white;
+		bottom: 0;
+		left: 0;
+		right: 100%;
+		top: 0; 
+		z-index: -1;
+		-webkit-transition: right 0.10s ease-in;
+	}
+	#bttStart:hover:before, #bttRestart:hover:before
+	{
+		right: 0;
+	}
+
+#bttRestart
+{
+	font-size: 24px;
+	background: none; border: 1px solid lightgray;
+	margin: 48px 0 0 0; padding: 16px;
+	position: relative;
+	display:block;
+	overflow: hidden;
+}
+
+#questionPassed
+{
+	font-size: 24px;
+	color: hsl(0, 0%, 70%); text-shadow: 0 0 8px hsl(0, 0%, 70%);
+}
+#message
+{
+	font-size: 16px;
+}
+#questionList
+{
+	font-size: 24px; text-align: center;
+}
+
+#questionDisplay, #mssEnd
+{
+	font-size: 48px; font-family: helvetica;
+	color: hsl(200, 100%, 50%); text-shadow: 0 0 8px hsl(200, 100%, 50%);
+}
+	#correct
+	{
+		color: hsl(100, 40%, 50%); text-shadow: 0 0 8px hsl(100, 40%, 50%);
+	}
+	#incorrect
+	{
+		color: hsl(0, 40%, 50%); text-shadow: 0 0 8px hsl(0, 40%, 50%);
+	}
+	#alert
+	{
+		color: hsl(40, 100%, 50%); text-shadow: 0 0 8px hsl(40, 100%, 50%);
+	}
+
+#answerInput
+{
+	font-size: 32px; text-align: center;
+	color: hsl(0, 0%, 100%); text-shadow: 0 0 6px hsl(0, 0%, 100%);
+	background: rgba(0, 0, 0, 0.0);
+	border: none;
+	width: 128px;
+	margin: 48px 0 0 0;
+}
+
+textarea:focus, input:focus, input:hover{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+
+#hr
+{
+	height: 1px; width: 96px;
+	border: 1px solid lightgray; box-shadow: 0 0 4px 1px hsl(0, 0%, 40%);
+}
+
+@media screen and (max-width: 768px)
+{
+	main
+	{
+		transform: scale(1.5)
+	}
+}
