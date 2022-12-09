@@ -117,4 +117,8 @@ textarea:focus, input:focus, input:hover{
 	{
 		transform: scale(1.5)
 	}
+	#bttButton
+	{
+		color: red;
+	}		
 }
