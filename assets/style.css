@@ -111,14 +111,10 @@ textarea:focus, input:focus, input:hover{
 	border: 1px solid lightgray; box-shadow: 0 0 4px 1px hsl(0, 0%, 40%);
 }
 
-@media screen and (max-width: 900px)
+@media screen and (max-width: 1024px)
 {
 	main
 	{
-		transform: scale(1.5)
+		transform: scale(4)
 	}
-	body
-	{
-		background: salmon;
-	}	
 }
