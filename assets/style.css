@@ -119,6 +119,6 @@ textarea:focus, input:focus, input:hover{
 	}
 	body
 	{
-		background: radial-gradient(salmon 1px, hsl(0, 0%, 0%) 1px); background-size: 10px 10px;
+		background: radial-gradient(hsl(0, 0%, 8%) 1px, hsl(0, 0%, 0%) 1px); background-size: 12px 12px;
 	}
 }
